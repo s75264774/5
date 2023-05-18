@@ -1,0 +1,14 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+
+bool isPalindrome(std::string word) {
+    std::string reversedWord = word;
+    std::reverse(reversedWord.begin(), reversedWord.end());
+    return word == reversedWord;
+}
+
+int main() {
+    std::cout << isPalindrome("racecar") << std::endl;
+    return 0;
+}
